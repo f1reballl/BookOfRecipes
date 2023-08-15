@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/f1reballl/BookOfRecipes/compare/v1.0.0...v1.1.0) (2023-08-15)
+
+
+### Features
+
+* new feature added ([0742d65](https://github.com/f1reballl/BookOfRecipes/commit/0742d65770cc4fc6a2c032829309c7acb1c9e050))
+
 ## 1.0.0 (2023-08-15)
 
 
