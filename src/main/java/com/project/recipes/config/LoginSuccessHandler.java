@@ -43,23 +43,3 @@ public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessH
     }
 }
 
-
-
-
-@Component
-public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
-    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
-                                        Authentication authentication) throws IOException {
-        PersonSecurity userDetails = (PersonSecurity) authentication.getPrincipal();
-
-        String redirectURL = request.getContextPath();
-
-        if (userDetails.getAuthorities().stream().anyMatch(a -> a.getAuthority().equals("ADMIN"))) {
-            redirectURL += "/users/";
-        } else {
-            redirectURL += "/recipes/all/users/" + userDetails.getId();
-        }
-        getRedirectStrategy().sendRedirect(request, response, redirectURL);
-    }
-}
-
