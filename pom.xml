@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.project.recipes</groupId>
     <artifactId>Recipes</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Recipes</name>
     <description>Recipes</description>
     <properties>
